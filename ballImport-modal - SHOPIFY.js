@@ -9,6 +9,8 @@ function createModalStyle() {
     }
 }
 
+// //////////////////////////////////////////////////////////
+
 function createModalLink() {
     var linkExistente = document.getElementById('ballImport-TableModalLink');
 
@@ -22,7 +24,7 @@ function createModalLink() {
     }
 }
 
-// Function to create the modal
+// //////////////////////////////////////////////////////////
 function createModal() {
     if (!document.getElementById('ballImport-Modal')) {
         var ballImportModal = document.createElement('div');
@@ -32,18 +34,21 @@ function createModal() {
     }
 }
 
+// //////////////////////////////////////////////////////////
 function openModal() {
     document.querySelector('#ballImport-TableModalLink>a').addEventListener('click', function () {
         document.querySelector('#ballImport-Modal').classList.add('ballImport-Modal__Show');
     });
 }
 
+// //////////////////////////////////////////////////////////
 function closeModal() {
     document.querySelector('.ballImport-Modal__Close').addEventListener('click', function () {
         document.querySelector('#ballImport-Modal').classList.remove('ballImport-Modal__Show');
     });
 }
 
+// //////////////////////////////////////////////////////////
 function initializeModal() {
     createModalStyle();
     createModalLink();
